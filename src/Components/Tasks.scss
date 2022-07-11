@@ -1,0 +1,124 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+@import "~bootstrap/scss/bootstrap";
+
+.ReactCollapse--collapse{
+    transition: all .2s ease-in-out;
+}
+
+.clear{
+    clear: both;
+    width: 100%;
+    height: 0;
+    font-size: 0;
+}
+
+.collapse-trigger{
+    cursor: pointer;
+}
+
+a.task-tile-link{
+    color: inherit;
+    &:hover{
+        text-decoration: none;
+    }
+}
+
+.main-content{
+    margin: 0 15% 0 15%;
+    padding: 0;
+}
+
+.banner{
+    display:flex;
+    flex-direction: row;
+
+    .logo{
+	margin-right: 25px;
+
+	img{
+	    height: 75px;
+	    margin-top: 15px;
+	}
+    }
+}
+
+@media screen and (max-width: 320px){
+    .logo{
+	display: none;
+    }
+}
+p.area-remarks{
+    color:rgb(82, 82, 82);
+}
+$task-wrapper-max-width: 1500px;
+$task-wrapper-padding: calc(100% - #{$task-wrapper-max-width});
+.tile-wrapper{
+
+    //width: 100%;
+
+    .collapse-trigger{
+        padding: 4em 0 0 1em;
+        h4{
+            font-size: 3em;
+            margin: 0;
+        }
+    }
+
+    .task-wrapper{
+
+        @extend .flex-row;
+        padding: 0 $task-wrapper-padding 0 $task-wrapper-padding;
+        max-width: $task-wrapper-max-width;
+    }
+
+    .task-tile{
+        @extend .col-sm-2;
+        box-shadow: 0.5em 0.5em 0.5em #ccc;
+        border: 1px solid #ccc;
+        float: left;
+        height: 10em;
+        font-size: 1em;
+        margin:2.7% 0 0 2.7%;
+        padding: 1%;
+        cursor: pointer;
+        word-wrap: break-word;
+        position: relative;
+
+        h5{
+            font-size: initial;
+            //margin-left: 15px;
+            //margin-right: 15px;
+        }
+
+        &:nth-child(3n){
+            margin-right: 0;
+        }
+
+        .task-data{
+        width: 90%;
+	    position: absolute;
+	    bottom: 1em;
+        //left: 15px;
+
+
+        table{
+            table-layout: fixed;
+            width: 100%;
+
+            tr{
+                td:nth-child(1) {
+                    width: 10%;
+                    //background: #ddd;
+                    }
+
+                td:nth-child(2) {
+                    width: 90%;
+                    //background: #ccc;
+                    }
+            }
+        }
+        }
+    }
+}
