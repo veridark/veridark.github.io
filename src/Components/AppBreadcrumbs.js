@@ -67,21 +67,19 @@ class AppBreadcrumbs extends React.Component {
       return null;
     }
     return (
-      <>
-        <Breadcrumb>
-          <Breadcrumb.Item href={UrlBuilder.basePath}>Home</Breadcrumb.Item>
-          {this.urlBuilder.isTaskUrl(path) && <Breadcrumb.Item active>{this.getTaskName(path)}</Breadcrumb.Item>}
-          {this.urlBuilder.isDatasetUrl(path) && (
-            <>
-              <Breadcrumb.Item href={this.getTaskUrl(path)}>{this.getTaskName(path)}</Breadcrumb.Item>
-              <Breadcrumb.Item active>{this.getDatasetName(path)}</Breadcrumb.Item>
-            </>
-          )}
-          {this.isOtherUrl(path) && (
-            <Breadcrumb.Item active>{this.urlMap[this.urlBuilder.getCanonicalUrl(path)]}</Breadcrumb.Item>
-          )}
-        </Breadcrumb>
-      </>
+      <Breadcrumb>
+        <Breadcrumb.Item href={UrlBuilder.basePath}>Home</Breadcrumb.Item>
+        {this.urlBuilder.isTaskUrl(path) && <Breadcrumb.Item active>{this.getTaskName(path)}</Breadcrumb.Item>}
+        {this.urlBuilder.isDatasetUrl(path) && (
+          <>
+            <Breadcrumb.Item href={this.getTaskUrl(path)}>{this.getTaskName(path)}</Breadcrumb.Item>
+            <Breadcrumb.Item active>{this.getDatasetName(path)}</Breadcrumb.Item>
+          </>
+        )}
+        {this.isOtherUrl(path) && (
+          <Breadcrumb.Item active>{this.urlMap[this.urlBuilder.getCanonicalUrl(path)]}</Breadcrumb.Item>
+        )}
+      </Breadcrumb>
     );
   }
 }

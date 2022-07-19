@@ -1,7 +1,8 @@
 import React from 'react';
-import ReactHtmlParser from 'react-html-parser';
+// import ReactHtmlParser from 'react-html-parser';
+import parse from 'html-react-parser';
 import { Collapse } from 'react-collapse';
-import { FcCollapse, FcExpand } from 'react-icons/all';
+import { FcCollapse, FcExpand } from 'react-icons/fc';
 import './DatasetDetails.scss';
 import UrlBuilder from './UrlBuilder';
 import PlotBuilder from './PlotBuilder';
@@ -14,7 +15,7 @@ class DatasetDetails extends React.Component {
     super(props);
     this.datasetId = props.match.params.id;
     this.dataset = data.datasets.find((ds) => ds.id === this.datasetId);
-    this.urlBuilder = new UrlBuilder();
+    // this.urlBuilder = new UrlBuilder();
     this.state = { infoVisible: false };
 
     this.toggleDatasetInfo = this.toggleDatasetInfo.bind(this);
@@ -45,7 +46,7 @@ class DatasetDetails extends React.Component {
     return (
       <>
         <h3 className="dataset-title">{this.dataset.dataset_name}</h3>
-        <div className="dataset-description">{ReactHtmlParser(this.dataset.dataset_description)}</div>
+        <div className="dataset-description">{parse(this.dataset.dataset_description)}</div>
         <DatasetInfo dataset={this.dataset} />
         <div>
           <div onClick={this.toggleDatasetInfo} className="collapse-trigger">
@@ -53,7 +54,7 @@ class DatasetDetails extends React.Component {
           </div>
 
           <Collapse isOpened={this.state.infoVisible}>
-            <div>{ReactHtmlParser(this.dataset.dataset_info)}</div>
+            <div>{parse(this.dataset.dataset_info)}</div>
           </Collapse>
         </div>
         <div className="add-model-link">

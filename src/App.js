@@ -5,7 +5,7 @@ import AppBreadcrumbs from './Components/AppBreadcrumbs';
 import Footer from './Components/Footer';
 import './assets/root.scss';
 
-const App = (props) => {
+function App(props) {
   const { location } = props;
   return (
     <div>
@@ -17,6 +17,6 @@ const App = (props) => {
       <Footer />
     </div>
   );
-};
+}
 
 export default App;

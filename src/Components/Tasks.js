@@ -22,14 +22,14 @@ class Tasks extends React.Component {
     });
   }
 
-  renderDataset(dataset) {
-    return (
-      <tr key={dataset.dataset}>
-        <td>{dataset.dataset}</td>
-        <td>{dataset.submission_count}</td>
-      </tr>
-    );
-  }
+  // renderDataset(dataset) {
+  //   return (
+  //     <tr key={dataset.dataset}>
+  //       <td>{dataset.dataset}</td>
+  //       <td>{dataset.submission_count}</td>
+  //     </tr>
+  //   );
+  // }
 
   renderTaskSubmissions(task) {
     if (!task.summary) {

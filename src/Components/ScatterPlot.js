@@ -109,11 +109,7 @@ class ScatterPlot extends Component {
   }
 
   render() {
-    return (
-      <>
-        <svg ref={this.svgRef} />
-      </>
-    );
+    return <svg ref={this.svgRef} />;
   }
 }
 export default ScatterPlot;

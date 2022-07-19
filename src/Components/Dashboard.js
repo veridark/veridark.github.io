@@ -11,7 +11,23 @@ import PrivacyStatementPage from './PrivacyStatementPage';
 import Datasets from './Datasets';
 import StarterCode from './StarterCode';
 
-const Dashboard = (props) => {
+// function Dashboard(props) {
+//   const { location } = props;
+//   return (
+//     <Switch location={location}>
+//       <Route path="/" element={<Tasks />} />
+//       <Route exact path={UrlBuilder.aboutPageUrl} element={<AboutPage />} />
+//       <Route exact path={UrlBuilder.submitPageUrl} element={<SubmitPage />} />
+//       <Route exact path={UrlBuilder.taskUrlTemplate} element={<TaskDetails />} />
+//       <Route exact path={UrlBuilder.datasetUrlTemplate} element={<DatasetDetails />} />
+//       <Route exact path={UrlBuilder.datasetsPageUrl} element={<Datasets />} />
+//       <Route exact path={UrlBuilder.starterCodePageUrl} element={<StarterCode />} />
+//       <Route exact path={UrlBuilder.termsAndConditionsPageUrl} element={<TermsAndConditionsPage />} />
+//       <Route exact path={UrlBuilder.privacyStatementPageUrl} element={<PrivacyStatementPage />} />
+//     </Switch>
+//   );
+// }
+function Dashboard(props) {
   const { location } = props;
   return (
     <Switch location={location}>
@@ -26,6 +42,6 @@ const Dashboard = (props) => {
       <Route path="/" component={Tasks} />
     </Switch>
   );
-};
+}
 
 export default Dashboard;

@@ -1,9 +1,10 @@
 import React from 'react';
-import ReactHtmlParser from 'react-html-parser';
+// import ReactHtmlParser from 'react-html-parser';
+import parse from 'html-react-parser';
 import data from '../data/datasets.json';
 import './Datasets.scss';
 import UrlBuilder from './UrlBuilder.js';
-import ContactEmail from './ContactEmail';
+// import ContactEmail from './ContactEmail';
 import StarterCodeIcon from './StarterCodeIcon';
 
 class Datasets extends React.Component {
@@ -20,7 +21,7 @@ class Datasets extends React.Component {
             <a href={this.urlBuilder.buildDatasetUrl(dataset)}>{dataset.dataset_name}</a>
           </h2>
         </div>
-        <div className="row dataset-description">{ReactHtmlParser(dataset.short_description)}</div>
+        <div className="row dataset-description">{parse(dataset.short_description)}</div>
         <div className="row dataset-info">
           <ul>
             <li>
@@ -49,23 +50,21 @@ class Datasets extends React.Component {
 
   render() {
     return (
-      <>
-        <div className="container">
-          <div className="row header-row">
-            <h1>Datasets</h1>
-            <p>The VeriDark Benchmark contains {data.datasets.length} datasets.</p>
-          </div>
-          {data.datasets
-            .sort((a, b) => {
-              const ds_name_a = a.dataset_name;
-              const ds_name_b = b.dataset_name;
-              if (ds_name_a < ds_name_b) return -1;
-              if (ds_name_a > ds_name_b) return 1;
-              return 0;
-            })
-            .map((ds) => this.renderDataset(ds))}
+      <div className="container">
+        <div className="row header-row">
+          <h1>Datasets</h1>
+          <p>The VeriDark Benchmark contains {data.datasets.length} datasets.</p>
         </div>
-      </>
+        {data.datasets
+          .sort((a, b) => {
+            const ds_name_a = a.dataset_name;
+            const ds_name_b = b.dataset_name;
+            if (ds_name_a < ds_name_b) return -1;
+            if (ds_name_a > ds_name_b) return 1;
+            return 0;
+          })
+          .map((ds) => this.renderDataset(ds))}
+      </div>
     );
   }
 }

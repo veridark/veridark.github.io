@@ -1,12 +1,12 @@
 import React from 'react';
-import UrlBuilder from './UrlBuilder';
-import ContactEmail, { ContactEmail2 } from './ContactEmail';
+// import UrlBuilder from './UrlBuilder';
+import { ContactEmail, ContactEmail2 } from './ContactEmail';
 import './Footer.scss';
 
 class Footer extends React.Component {
   constructor(props) {
     super(props);
-    this.urlBuilder = new UrlBuilder();
+    // this.urlBuilder = new UrlBuilder();
   }
 
   render() {
