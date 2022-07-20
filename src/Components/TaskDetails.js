@@ -1,5 +1,6 @@
 import React from 'react';
-import data from '../data/tasks.json';
+import data from './tasks.json';
+// import data from '../data/tasks.json';
 //import data from 'src/data/tasks.json'
 //var path = require('path');
 //var here = path.basename(__dirname__);// + resolve('../data/tasks.json');

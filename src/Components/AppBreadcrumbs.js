@@ -1,7 +1,8 @@
 import React from 'react';
 import Breadcrumb from 'react-bootstrap/Breadcrumb';
 import UrlBuilder from './UrlBuilder.js';
-import taskData from '../data/tasks.json';
+//import taskData from '../data/tasks.json';
+import taskData from './tasks.json';
 import datasetData from '../data/datasets.json';
 
 class AppBreadcrumbs extends React.Component {
