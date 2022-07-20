@@ -86,4 +86,5 @@ jobs:
     - name: Install npm dependencies
       run: npm install
     - name: Deploy
+      working-directory: "/home/runner/work/veridark.github.io/veridark.github.io/"
       run: npm run deploy
