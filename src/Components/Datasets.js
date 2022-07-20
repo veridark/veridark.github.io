@@ -1,7 +1,7 @@
 import React from 'react';
 // import ReactHtmlParser from 'react-html-parser';
 import parse from 'html-react-parser';
-import data from '../data/datasets.json';
+import data from './datasets.json';
 import './Datasets.scss';
 import UrlBuilder from './UrlBuilder.js';
 // import ContactEmail from './ContactEmail';

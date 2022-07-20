@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import UrlBuilder from './UrlBuilder';
 import { ContactEmail } from './ContactEmail';
 import StarterCodeIcon from './StarterCodeIcon';
-import data from '../data/datasets.json';
+import data from './datasets.json';
 
 export class StarterCode extends Component {
   constructor(props) {

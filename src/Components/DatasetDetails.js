@@ -8,7 +8,7 @@ import UrlBuilder from './UrlBuilder';
 import PlotBuilder from './PlotBuilder';
 import DatasetInfo from './DatasetInfo';
 import ModelScoresTable from './ModelScoresTable';
-import data from '../data/datasets.json';
+import data from './datasets.json';
 
 class DatasetDetails extends React.Component {
   constructor(props) {
