@@ -1,6 +1,6 @@
 {
   "name": "veridark_benchmark",
-  "homepage": ".",
+  "homepage": "https://veridark.github.io/",
   "proxy": "http://localhost:3000",
   "version": "0.1.0",
   "private": true,
@@ -13,6 +13,7 @@
     "html-react-parser": "^3.0.1",
     "node-gyp": "^9.1.0",
     "node-sass": "^7.0.1",
+    "path": "^0.12.7",
     "react": "^18.2.0",
     "react-bootstrap": "^2.4.0",
     "react-collapse": "^5.1.1",
@@ -24,12 +25,15 @@
     "webfontloader": "^1.6.28"
   },
   "scripts": {
-    "predeploy": "npm run build",
+    "predeploy": "npm run build --prefix /home/runner/work/veridark.github.io/veridark.github.io/",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "airbnb"
   },
   "browserslist": {
     "production": [
@@ -49,8 +53,6 @@
     "eslint": "^8.20.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^6.12.0",
-    "eslint-config-react": "^1.1.7",
-    "eslint-config-react-app": "^7.0.1",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-prettier": "^4.2.1",
     "gh-pages": "^4.0.0",

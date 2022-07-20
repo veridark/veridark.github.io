@@ -58,7 +58,7 @@ class ModelScoresTable extends React.Component {
         <td>{rank}</td>
         <td>{model.model}</td>
         {this.metrics.map((m) => (
-          <td>{model.results[m]}</td>
+          <td key={m.id}>{model.results[m]}</td>
         ))}
         <td className="td-extra-training-data">{model.extra_training_data ? <CheckIcon /> : <CrossIcon />}</td>
         <td>{model.model_size}</td>
@@ -98,7 +98,7 @@ class ModelScoresTable extends React.Component {
             <td>Rank</td>
             <td>Model</td>
             {this.metrics.map((m) => (
-              <td>
+              <td key={m.id}>
                 {m}
                 <button type="button" onClick={() => this.onSort(m)}>
                   {this.renderSortButton()}

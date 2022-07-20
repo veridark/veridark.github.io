@@ -1,8 +1,12 @@
 import React from 'react';
 import data from '../data/tasks.json';
+//import data from 'src/data/tasks.json'
+//var path = require('path');
+//var here = path.basename(__dirname__);// + resolve('../data/tasks.json');
 import UrlBuilder from './UrlBuilder';
 import './TaskDetails.scss';
 import StarterCodeIcon from './StarterCodeIcon';
+import { resolve } from 'path';
 
 class TaskDetails extends React.Component {
   constructor(props) {
