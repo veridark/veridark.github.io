@@ -1,7 +1,8 @@
 import React from 'react';
 import './AboutPage.scss';
-import datasets_info from '../data/datasets.json';
-import tasks_info from '../data/tasks.json';
+import datasets_info from './datasets.json';
+//import tasks_info from '../data/tasks.json';
+import tasks_info from './tasks.json';
 import UrlBuilder from './UrlBuilder';
 
 function AboutPage() {
