@@ -1,6 +1,6 @@
 import React from 'react';
 import { Collapse } from 'react-collapse';
-import data from '../data/homepage.json';
+import data from './homepage.json';
 import './Tasks.scss';
 import UrlBuilder from './UrlBuilder.js';
 import bannerLogo from '../assets/logo-banner.png';
