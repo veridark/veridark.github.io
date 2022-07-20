@@ -86,5 +86,5 @@ jobs:
     - name: Install npm dependencies
       run: npm install
     - name: Deploy
-      run: npm run deploy
+      run: echo $(pwd) && npm run deploy
       working-directory: "/home/runner/work/veridark.github.io/veridark.github.io/"
