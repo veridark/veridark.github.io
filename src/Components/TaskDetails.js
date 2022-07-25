@@ -7,7 +7,6 @@ import data from './tasks.json';
 import UrlBuilder from './UrlBuilder';
 import './TaskDetails.scss';
 import StarterCodeIcon from './StarterCodeIcon';
-import { resolve } from 'path';
 
 class TaskDetails extends React.Component {
   constructor(props) {
