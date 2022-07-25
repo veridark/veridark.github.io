@@ -1,0 +1,56 @@
+{
+    "tasks": [
+        {
+            "area": "NLP Benchmark",
+            "id": "authorship-verification",
+            "task_name": "Authorship Verification",
+            "task_description": "Authorship Verification is the task of classifying a pair of documents/sentences as being written by the same author or by different authors.",
+            "datasets": [
+                {
+                    "dataset_id": "darkredditplusav",
+                    "dataset_name": "DarkReddit+",
+                    "metric": "overall",
+                    "model_name": "BERT",
+                    "paper_title": "VeriDark: A Large-Scale Benchmark for Authorship Verification on the Dark Web",
+                    "paper_link": "https://arxiv.org/abs/2207.03477",
+                    "starter_code": ""
+                },
+                {
+                    "dataset_id": "silkroad1",
+                    "dataset_name": "SilkRoad1",
+                    "metric": "overall",
+                    "model_name": "BERT",
+                    "paper_title": "VeriDark: A Large-Scale Benchmark for Authorship Verification on the Dark Web",
+                    "paper_link": "https://arxiv.org/abs/2207.03477",
+                    "starter_code": ""
+                },
+                {
+                    "dataset_id": "agora",
+                    "dataset_name": "Agora",
+                    "metric": "overall",
+                    "model_name": "BERT",
+                    "paper_title": "VeriDark: A Large-Scale Benchmark for Authorship Verification on the Dark Web",
+                    "paper_link": "https://arxiv.org/abs/2207.03477",
+                    "starter_code": ""
+                }
+            ]
+        },
+        {
+            "area": "NLP Benchmark",
+            "id": "authorship-identification",
+            "task_name": "Authorship Identification",
+            "task_description": "Authorship Identification is the task of determining the author of an unknown document. The number of authors is fixed.    ",
+            "datasets": [
+                {
+                    "dataset_id": "darkredditai",
+                    "dataset_name": "DarkReddit+ Author Identification",
+                    "metric": "accuracy",
+                    "model_name": "BERT",
+                    "paper_title": "VeriDark: A Large-Scale Benchmark for Authorship Verification on the Dark Web",
+                    "paper_link": "https://arxiv.org/abs/2207.03477",
+                    "starter_code": ""
+                }
+            ]
+        }
+    ]
+}
