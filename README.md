@@ -1,6 +1,6 @@
 
 # VeriDark - Benchmark for Authorship Analysis in the DarkNet
-
+ 
 [VeriDark](https://veridark.github.io/) provides a benchmark for the Authorship Verification and Authorship Identification tasks, available at [veridark.github.io/](https://veridark.github.io/).
 
 The project aims to facilitate research into Authorship Analysis in the cybersecurity domain. It tracks the performance of different models and allows an easy overview of the progress on different tasks and datasets.
