@@ -1,0 +1,26 @@
+{
+    "areas": [
+        {
+            "name": "NLP Benchmark",
+            "remarks": null,
+            "tasks": [
+                {
+                    "id": "authorship-verification",
+                    "name": "Authorship Verification",
+                    "summary": {
+                        "dataset_count": 3,
+                        "submission_count": 1
+                    }
+                },
+                {
+                    "id": "authorship-identification",
+                    "name": "Authorship Identification",
+                    "summary": {
+                        "dataset_count": 1,
+                        "submission_count": 1
+                    }
+                }
+            ]
+        }
+    ]
+}
