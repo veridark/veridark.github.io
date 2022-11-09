@@ -7,9 +7,10 @@ function SubmitPage() {
     <>
       <h1 id="guide-on-how-to-submit-a-new-model">How to submit a new model</h1>
       <p>
-        To submit a new result, click on <a href="https://github.com/veridark/veridark.github.io">Create a new issue</a>{' '}
-        and click on the <code>Get started </code> button to the right of the <code>Submit new model</code> template.
-        Please fill in the information requested in the template.
+        To submit a new result, click on{' '}
+        <a href="https://github.com/veridark/veridark.github.io/issues/new/choose">Create a new issue</a> and click on
+        the <code>Get started </code> button to the right of the <code>Submit new model</code> template. Please fill in
+        the information requested in the template.
       </p>
       <p>
         Let’s assume you want to submit an Authorship Verification model; after starting a new model issue template,
