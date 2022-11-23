@@ -92,6 +92,6 @@ jobs:
     - name: Deploy
       run: |
         git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
-        echo $(pwd) && npm run deploy -- -u "github-actions-bot <support+actions@github.com>"
+        echo $(pwd) && NODE_DEBUG=gh-pages npm run deploy -- -u "github-actions-bot <support+actions@github.com>"
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
