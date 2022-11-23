@@ -24,6 +24,7 @@
     "webfontloader": "^1.6.28"
   },
   "scripts": {
+    "predeploy": "npm run build",
     "deploy": "gh-pages -b gh-pages -d build",
     "start": "react-scripts start",
     "build": "CI=false && react-scripts build",
