@@ -24,8 +24,6 @@
     "webfontloader": "^1.6.28"
   },
   "scripts": {
-    "preinstall": "cd /home/runner/work/veridark.github.io/veridark.github.io/",
-    "predeploy": "npm run build --prefix /home/runner/work/veridark.github.io/veridark.github.io/",
     "deploy": "gh-pages -b gh-pages -d build",
     "start": "react-scripts start",
     "build": "CI=false && react-scripts build",
