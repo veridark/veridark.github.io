@@ -102,7 +102,7 @@ class Tasks extends React.Component {
           <div className="intro">
             <p>
               VeriDark (Authorship <b>Veri</b>fication in the <b>Dark</b>Net) is a benchmark for evaluating authorship
-              analysis methods in a cybersecurity context, by introducing datasets gathered from the DarkNet marketplace
+              analysis methods in a cybersecurity context, by introducing datasets gathered from DarkNet marketplace
               forums or from Darknet-related discussions on Reddit.
             </p>
             <p>
