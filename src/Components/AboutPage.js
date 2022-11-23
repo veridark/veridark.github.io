@@ -16,7 +16,7 @@ function AboutPage() {
       <h1>What is the VeriDark project?</h1>
       <h2>Benchmark</h2>
       <p>
-        VeriDark provides a benchmark for Authorship Attribution tasks. It contains {tasks_info.tasks.length} tasks
+        VeriDark provides a benchmark for Authorship Analysis tasks. It contains {tasks_info.tasks.length} tasks
         (Authorship Verification and Authorship Identification) on {datasets_info.datasets.length} newly created
         datasets.
       </p>
@@ -34,7 +34,7 @@ function AboutPage() {
       <p>
         The current datasets will be updated to account for potential issues (wrong labels, duplicates etc.) and
         examples containing sensitive information which receive a request for deletion. Please raise these issues or
-        file a request for deletion at this : <a href="https://forms.gle/1LSA6cvh4daUBxYUA">contact form</a>.
+        file a request for deletion at this <a href="https://forms.gle/1LSA6cvh4daUBxYUA">contact form</a>.
       </p>
       <h1>Acknowledgements</h1>
       <p>

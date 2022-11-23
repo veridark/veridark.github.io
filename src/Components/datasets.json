@@ -10,7 +10,7 @@
             "dataset_link": "https://github.com/bit-ml/VeriDark/tree/master/datasets",
             "preferred_metric": "overall",
             "starter_code": "",
-            "license": "CC BY 6.0",
+            "license": "CC BY 4.0",
             "license_url": "https://creativecommons.org/licenses/by/4.0/",
             "models": [
                 {
