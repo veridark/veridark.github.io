@@ -46,7 +46,7 @@ jobs:
         git config --local user.name "GitHub Action"
         git status | grep "nothing to commit" && echo "Nothing to commit." || git commit -m "Auto-update index" -a
     - name: Push changes
-      uses: ad-m/github-push-action@main
+      uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
   deploy: 
@@ -74,7 +74,7 @@ jobs:
       with:
         ssh-key: ${{secrets.DEPLOY_AGENT_PRIVATE_KEY}}
         fetch-depth: 0
-        ref: main
+        ref: master
       #uses: actions/checkout@main 
       #with:
       #  persist-credentials: false 
